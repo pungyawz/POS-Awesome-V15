@@ -2,7 +2,7 @@
 	<v-app class="container1" :class="rtlClasses">
 		<AppLoadingOverlay :visible="globalLoading" />
 		<v-main class="main-content">
-			<Navbar
+			<!-- <Navbar
 				:pos-profile="posProfile"
 				:pending-invoices="pendingInvoices"
 				:last-invoice-id="lastInvoiceId"
@@ -29,7 +29,7 @@
 				@logout="handleLogout"
 				@refresh-cache-usage="handleRefreshCacheUsage"
 				@update-after-delete="handleUpdateAfterDelete"
-			/>
+			/> -->
 			<div class="page-content">
 				<component v-bind:is="page" class="mx-4 md-4"></component>
 			</div>
