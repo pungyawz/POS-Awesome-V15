@@ -4,7 +4,7 @@
 			<v-btn v-bind="props" color="primary" variant="elevated" class="menu-btn-compact">
 				{{ __("Menu") }}
 				<v-icon end size="16" class="ml-1">mdi-menu-down</v-icon>
-			</v-btn>
+			</v-btn> 
 		</template>
 		<v-card class="menu-card-compact" elevation="12">
 			<div class="menu-header-compact">
@@ -32,7 +32,7 @@
 					</div>
 				</v-list-item>
 
-				<v-list-item
+				<!-- <v-list-item
 					v-if="posProfile.posa_allow_print_last_invoice"
 					@click="$emit('print-last-invoice')"
 					:disabled="!lastInvoiceId"
@@ -51,9 +51,9 @@
 							__("Reprint previous transaction")
 						}}</v-list-item-subtitle>
 					</div>
-				</v-list-item>
+				</v-list-item> -->
 
-				<v-list-item @click="$emit('sync-invoices')" class="menu-item-compact info-action">
+				<!-- <v-list-item @click="$emit('sync-invoices')" class="menu-item-compact info-action">
 					<template v-slot:prepend>
 						<div class="menu-icon-wrapper-compact info-icon">
 							<v-icon color="white" size="16">mdi-sync</v-icon>
@@ -67,9 +67,9 @@
 							__("Upload pending transactions")
 						}}</v-list-item-subtitle>
 					</div>
-				</v-list-item>
+				</v-list-item> -->
 
-				<v-list-item @click="$emit('toggle-offline')" class="menu-item-compact warning-action">
+				<!-- <v-list-item @click="$emit('toggle-offline')" class="menu-item-compact warning-action">
 					<template v-slot:prepend>
 						<div class="menu-icon-wrapper-compact warning-icon">
 							<v-icon color="white" size="16">mdi-wifi-off</v-icon>
@@ -87,9 +87,9 @@
 							}}
 						</v-list-item-subtitle>
 					</div>
-				</v-list-item>
+				</v-list-item> -->
 
-				<v-list-item
+				<!-- <v-list-item
 					@click="$emit('clear-cache')"
 					:disabled="manualOffline || !networkOnline || !serverOnline"
 					class="menu-item-compact neutral-action"
@@ -107,7 +107,7 @@
 							__("Remove local data and refresh")
 						}}</v-list-item-subtitle>
 					</div>
-				</v-list-item>
+				</v-list-item> -->
 
 				<v-divider class="menu-section-divider-compact"></v-divider>
 
